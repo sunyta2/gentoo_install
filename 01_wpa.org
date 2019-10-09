@@ -1,0 +1,17 @@
+# This is for wpa_supplicant
+# curl -O 
+iwconfig # ip a
+
+
+cd /etc/
+cat > wpa.conf
+network={
+    ssid="Public WiFi Free"
+    key_mgmt=NONE
+    auth_alg=OPEN
+   }
+   # ^d(ctrl-d)
+cat wpa.conf
+
+chmod -v 600 $_
+wpa_supplicant -D nl80211,wext -i wlp3s0 -c /etc/wpa.conf -B
