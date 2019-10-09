@@ -1,5 +1,7 @@
 # This is for wpa_supplicant
-# curl -O 
+# curl -O https://raw.githubusercontent.com/sunyta2/gentoo_install/master/01_wpa.org
+# 
+
 iwconfig # ip a
 
 
